@@ -1,0 +1,43 @@
+:root {
+  --ink: #1f2a37;
+  --accent: #0f766e;
+  --paper: #f4f7f6;
+}
+body {
+  font-family: "Cairo", system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+.app-title {
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--accent);
+}
+.panel {
+  background: #fff;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0b5f58;
+  border-color: #0b5f58;
+}
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid #eef2f1;
+}
+.student-item:last-child { border-bottom: 0; }
+.report-stat {
+  background: var(--paper);
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  margin-bottom: .5rem;
+}
